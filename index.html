@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+
+    <style>
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        div[style*="margin: 16px 0"] {
+            margin:0 !important;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        table {
+            border: 0;
+            border-spacing: 0;
+            border-collapse: collapse
+        }
+
+        #MessageViewBody,
+        #MessageWebViewDiv{
+            width: 100% !important;
+        }
+
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a[x-apple-data-detectors],
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+        u + #body a,
+        #MessageViewBody a
+        {
+           color: inherit;
+           text-decoration: none;
+           font-size: inherit;
+           font-family: inherit;
+           font-weight: inherit;
+           line-height: inherit;
+        }
+
+        .im {
+            color: inherit !important;
+        }
+
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+        
+        img.g-img + div {
+            display:none !important;
+        }
+
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+            }
+        }
+        
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+            }
+        }
+        
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+        }
+    </style>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+    <![endif]-->
+
+    <style>
+        .s-btn__filled:hover {
+            background: #0077CC !important;
+            border-color: #0077CC !important;
+        }
+        .s-btn__white:hover {
+            background: #EFF0F1 !important;
+            border-color: #EFF0F1 !important;
+        }
+        .s-btn__outlined:hover {
+            background: rgba(0,119,204,.05) !important;
+            color: #005999 !important;
+        }
+        .s-tag:hover,
+        .post-tag:hover {
+            border-color: #cee0ed !important;
+            background: #cee0ed !important;
+        }
+
+        .has-markdown a,
+        .has-markdown a:visited {
+            color: #0077CC !important;
+            text-decoration: none !important;
+        }
+
+        code {
+            padding: 1px 5px;
+            background-color: #EFF0F1;
+            color: #242729;
+            font-size: 13px;
+            line-height: inherit;
+            font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif;
+        }
+        pre {
+            margin: 0 0 15px;
+            line-height: 17px;
+            background-color: #EFF0F1;
+            padding: 4px 8px;
+            border-radius: 3px;
+            overflow-x: auto;
+        }
+        pre code {
+            margin: 0 0 15px;
+            padding: 0;
+            line-height: 17px;
+            background-color: none;
+        }
+
+        blockquote {
+            margin: 0 0 15px;
+            padding: 4px 10px;
+            background-color: #FFF8DC;
+            border-left: 2px solid #ffeb8e;
+        }
+        blockquote p {
+            padding: 4px 0;
+            margin: 0;
+            overflow-wrap: break-word;
+        }
+
+        .bar {
+            border-radius: 5px;
+        }
+        .btr {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .bbr {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .hide-on-dsk {
+            display: none !important;
+            max-height: 0 !important;
+            overflow: hidden !important;
+            visibility: hidden !important;
+        }
+
+        @media screen and (max-width: 639px) {
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+
+            .stack-column-40 {
+                display: inline-block !important;
+                width: 40% !important;
+                max-width: 40% !important;
+                direction: ltr !important;
+            }
+
+            .stack-column-center {
+                text-align: center !important;
+            }
+
+            .hide-on-mobile {
+                display: none !important;
+                max-height: 0 !important;
+                overflow: hidden !important;
+                visibility: hidden !important;
+            }
+
+            .show-on-mobile {
+                display: block !important;
+                max-height: 100% !important;
+                overflow: visible !important;
+                visibility: visible !important;
+            }
+
+            .sm-p-none  {padding: 0 !important;}
+            .sm-pt-none {padding-top: 0 !important;}
+            .sm-pb-none {padding-bottom: 0 !important;}
+            .sm-pr-none {padding-right: 0 !important;}
+            .sm-pl-none {padding-left: 0 !important;}
+            .sm-px-none {padding-left: 0 !important; padding-right: 0 !important;}
+            .sm-py-none {padding-top: 0 !important; padding-bottom: 0 !important;}
+
+            .sm-p   {padding: 20px !important;}
+            .sm-pt  {padding-top: 20px !important;}
+            .sm-pb  {padding-bottom: 20px !important;}
+            .sm-pr  {padding-right: 20px !important;}
+            .sm-pl  {padding-left: 20px !important;}
+            .sm-px  {padding-left: 20px !important; padding-right: 20px !important;}
+            .sm-py  {padding-top: 20px !important; padding-bottom: 20px !important;}
+            .sm-mb  {margin-bottom: 20px !important;}
+
+            .bar,
+            .btr,
+            .bbr {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+    </style>
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; background: #f3f3f5; mso-line-height-rule: exactly;">
+    <center style="width: 100%; background: #f3f3f5;">
+    <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f3f3f5;">
+    <tr>
+    <td>
+    <![endif]-->
+
+        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+            Preheader Goes Here
+        </div>
+
+        <div class="email-container" style="max-width: 640px; margin: 0 auto; background: #ffffff;">
+            <!--[if mso]>
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="640" align="center">
+            <tr>
+            <td>
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 640px; width:100%; background: #ffffff;">
+                <tr>
+                    <td style="padding: 20px 30px; text-align: left;" class="sm-px">
+                        <p style="margin: 0; text-align: center; font-size: 12px; line-height: 1.3; color: #000000; font-family: arial, sans-serif;">
+                            Click <a href="#" style="color: #000000; text-decoration: underline;">here</a> to view email in Browser
+                        </p>
+                        <hr style="margin-top: 0; width: 60%">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="middle" class="hide-on-mobile" style="background-image: url('images/bg-header-dsk.png'); background-position: center center; background-size: cover; width:100%; max-width: 640px; height: 57px; background-color: #0a5196;">
+                        <!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px; height:57px; background-position: center center !important;">
+                        <v:fill type="tile" src="images/bg-header-dsk.png" color="#0a5196"/>
+                        <v:textbox inset="0,0,0,0">
+                        <![endif]-->
+                        <div>
+                            <!--[if mso]>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                            <td>
+                            <![endif]-->
+                            <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                    <td style="padding: 8px 30px 8px 20px; vertical-align: middle;" class="sm-px">
+                                        <a href="#logo">
+                                            <img src="images/logo.png" alt="Logo" border="0" height="41" width="41" style="display: block; font-family: arial, sans-serif; font-size: 15px; line-height: 1; margin: 0;">
+                                        </a>
+                                    </td>
+                                    <td style="padding: 8px 30px; vertical-align: middle;" class="sm-px">
+                                        <p style="margin: 0; font-size: 14px; line-height: 1.3; color: #ffffff; font-family: arial, sans-serif;">Hello John, Welcome to our email program!</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </div>
+                        <!--[if gte mso 9]>
+                        </v:textbox>
+                        </v:rect>
+                        <![endif]-->
+                    </td>
+                    <td valign="middle" class="hide-on-dsk show-on-mobile" style="background-image: url('images/bg-header-mob.png'); background-position: center center; background-size: cover; width:100%; background-color: #0a5196;">
+                        <!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px; height:57px; background-position: center center !important;">
+                        <v:fill type="tile" src="images/bg-header-mob.png" color="#0a5196"/>
+                        <v:textbox inset="0,0,0,0">
+                        <![endif]-->
+                        <div>
+                            <!--[if mso]>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                            <td>
+                            <![endif]-->
+                            <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                    <td style="padding: 8px 10px 8px 20px;; text-align: left;">
+                                        <a href="#logo">
+                                            <img src="images/logo.png" alt="Logo" border="0" height="41" width="41" style="display: block; font-family: arial, sans-serif; font-size: 15px; line-height: 1; margin: 0;">
+                                        </a>
+                                    </td>
+                                    <td style="padding: 8px 20px 8px 10px;">
+                                        <p style="margin: 0; font-size: 14px; line-height: 1.3; color: #ffffff; font-family: arial, sans-serif;">Hello John, Welcome to our email program!</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </div>
+                        <!--[if gte mso 9]>
+                        </v:textbox>
+                        </v:rect>
+                        <![endif]-->
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;" class="sm-px">
+                        <span>&nbsp;</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #27348b;" class="hide-on-mobile">
+                        <img src="images/banner-dsk.png" alt="Banner" width="640" height="" style="width:100%; max-width: 640px; height:auto; display: block;" class="g-img">
+                    </td>
+
+                    <td style="background-color: #27348b;" class="hide-on-dsk show-on-mobile">
+                        <img src="images/banner-mob.png" alt="Banner" width="100%" height="" style="width:100%; height:auto; display: block;" class="g-img">
+                    </td>
+                </tr>
+
+                <!-- <tr>
+                    <td style="text-align: left;" class="sm-px">
+                        <span>&nbsp;</span>
+                    </td>
+                </tr> -->
+
+                <tr>
+                    <td style="padding: 20px 30px; text-align: left;" class="sm-px">
+                        <p style="margin: 0; text-align: center; font-size: 14px; line-height: 1.3; color: #000000; font-family: arial, sans-serif;">
+                            Choose how you want to hear about us.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div style="display: table; width: 100%; margin: 0 auto; text-align: center; font-size: 0;">
+                            <!--[if mso]>
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="640">
+                            <tr>
+                            <td align="left" valign="middle" width="300">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; width:100%; max-width:300px; vertical-align: middle;" class="stack-column">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="padding: 0 20px 20px;">
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                <tr>
+                                                    <td style="background: #000000;">
+                                                        <a href="#" style="background: #000000; border: 1px solid #000000; font-family: arial, sans-serif; font-size: 18px; line-height: 1.3; color: #ffffff; text-align: center; text-decoration: none; padding: 13px 20px; display: block; white-space: nowrap;">SMS</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            <td align="left" valign="middle" width="300">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; width:100%; max-width:300px; vertical-align: middle;" class="stack-column">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="padding: 0 20px 20px;">
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                <tr>
+                                                    <td style="background: #000000;">
+                                                        <a href="#" style="background: #000000; border: 1px solid #000000; font-family: arial, sans-serif; font-size: 18px; line-height: 1.3; color: #ffffff; text-align: center; text-decoration: none; padding: 13px 20px; display: block; white-space: nowrap;">EMAIL</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #ffffff; padding: 20px 20px 0 20px;">
+                        <div dir="rtl" style="display: table; width: 100%; margin: 0 auto; text-align: left; font-size: 0;">
+                            <!--[if mso]>
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="600">
+                            <tr>
+                            <td align="left" valign="top" width="300">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; width: 100%; max-width: 300px; vertical-align: middle;" class="stack-column">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #000000;">
+                                    <tr>
+                                        <td dir="ltr">
+                                            <img src="images/lens1.png" width="300" height="" alt="Lens 1" border="0" style="width:100%; height: auto; display: block; font-family: arial, sans-serif; font-size: 15px; line-height:1; margin: 0;" class="g-img">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            <td align="left" valign="top" width="300">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; width: 100%; max-width: 300px; vertical-align: middle;" class="stack-column">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #000000;">
+                                    <tr>
+                                        <td dir="ltr" style="padding: 20px 20px; font-family: arial, sans-serif; font-size: 10px; line-height: 1.3; color: #ffffff; text-align: left;">
+                                            <p style="margin: 0;">Text 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0 20px 20px">
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                <tr>
+                                                    <td style="background: #ffffff;">
+                                                        <a href="#" style="background: #ffffff; border: 1px solid #ffffff; font-family: arial, sans-serif; font-size: 10px; line-height: 1; font-weight: bold; color: #000000; text-align: center; text-decoration: none; padding: 12px 30px; display: block; white-space: nowrap;">Learn More</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #ffffff; padding: 0 20px 20px 20px;">
+                        <div dir="ltr" style="display: table; width: 100%; margin: 0 auto; text-align: left; font-size: 0;">
+                            <!--[if mso]>
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="600">
+                            <tr>
+                            <td align="left" valign="top" width="300">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; width: 100%; max-width: 300px; vertical-align: middle;" class="stack-column">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #000000;">
+                                    <tr>
+                                        <td dir="ltr">
+                                            <img src="images/lens2.png" width="300" height="" alt="Lens 2" border="0" style="width:100%; height: auto; display: block; font-family: arial, sans-serif; font-size: 15px; line-height:1.3; margin: 0;" class="g-img">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            <td align="left" valign="top" width="300">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; width: 100%; max-width: 300px; vertical-align: middle;" class="stack-column">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #000000;">
+                                    <tr>
+                                        <td dir="ltr" style="padding: 20px 20px; font-family: arial, sans-serif; font-size: 10px; line-height: 1.3; color: #ffffff; text-align: left;">
+                                            <p style="margin: 0;">Text 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0 20px 20px">
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                <tr>
+                                                    <td style="background: #ffffff;" class="stack-column-center">
+                                                        <a href="#" style="background: #ffffff; border: 1px solid #ffffff; font-family: arial, sans-serif; font-size: 10px; line-height: 1; font-weight: bold; color: #000000; text-align: center; text-decoration: none; padding: 12px 30px; display: block; white-space: nowrap;">Learn More</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="middle" class="hide-on-mobile" style="background-image: url('images/bg-black-dsk.png'); background-position: center center; background-size: cover; width:100%; background-color: #ffffff;">
+                        <!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px; height:220px; background-position: center center !important;">
+                        <v:fill type="tile" src="images/bg-black-dsk.png" color="#ffffff"/>
+                        <v:textbox inset="0,0,0,0">
+                        <![endif]-->
+                        <div dir="rtl" style="display: table; width: 100%; margin: 0 auto; text-align: left; font-size: 0;">
+                            <!--[if mso]>
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="640">
+                            <tr>
+                            <td align="left" valign="middle" width="100">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; width: 100%; max-width: 100px; vertical-align: middle;" class="stack-column-center">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr">
+                                            <img src="images/manStanding.png" width="52" height="" alt="Man Standing" border="0" style="width:52px; height: auto; font-family: arial, sans-serif; font-size: 15px; line-height:1.3; margin: 0;" class="g-img">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            <td align="left" valign="middle" width="500">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; width: 100%; max-width: 500px; vertical-align: middle;" class="stack-column-center">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" style="padding: 20px 20px 0; font-family: arial, sans-serif; font-size: 20px; line-height: 1.3; color: #000000;">
+                                            <p style="margin: 0;">Exciting content <strong>EVERY DAY!</strong></p>
+                                            <hr style="margin: 0">
+                                       </td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <td style="text-align: left;">
+                                            <span>&nbsp;</span>
+                                        </td>
+                                    </tr> -->
+                                    <tr>
+                                        <td dir="ltr" style="padding: 30px 120px 20px 20px; font-family: arial, sans-serif; font-size: 10px; line-height: 1.3; color: #ffffff;" class="sm-px">
+                                            <p style="margin: 0;">Text 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0 20px 20px">
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                <tr>
+                                                    <td style="background: #ffffff;">
+                                                        <a href="#" style="background: #ffffff; border: 1px solid #ffffff; font-family: arial, sans-serif; font-size: 10px; line-height: 1; font-weight: bold; color: #000000; text-align: center; text-decoration: none; padding: 12px 30px; display: block; white-space: nowrap;">Learn More</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </div>
+                        <!--[if gte mso 9]>
+                        </v:textbox>
+                        </v:rect>
+                        <![endif]-->
+                    </td>
+
+                    <td valign="middle" class="hide-on-dsk show-on-mobile" style="background-image: url('images/bg-black-mob.png'); background-position: center bottom; background-size: cover; width:100%; background-color: #ffffff;">
+                        <!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px; height:423px; background-position: center bottom !important;">
+                        <v:fill type="tile" src="images/bg-black-mob.png" color="#ffffff"/>
+                        <v:textbox inset="0,0,0,0">
+                        <![endif]-->
+                        <div dir="rtl" style="display: table; width: 100%; margin: 0 auto; text-align: left; font-size: 0;">
+                            <!--[if mso]>
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="640">
+                            <tr>
+                            <td align="left" valign="middle" width="140">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; width: 100%; max-width: 140px; vertical-align: middle;" class="stack-column-center">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr">
+                                            <img src="images/manStanding.png" width="52" height="" alt="Man Standing" border="0" style="width:52px; height: auto; font-family: arial, sans-serif; font-size: 15px; line-height:1.3; margin: 0;" class="g-img">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            <td align="left" valign="middle" width="500">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; width: 100%; max-width: 500px; vertical-align: middle;" class="stack-column-center">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" style="padding: 20px 20px 30px; font-family: arial, sans-serif; font-size: 20px; line-height: 1.3; color: #000000;">
+                                            <p style="margin: 0;">Exciting content <strong>EVERY DAY!</strong></p>
+                                            <hr style="margin: 0;">
+                                       </td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <td style="text-align: left;">
+                                            <span>&nbsp;</span>
+                                        </td>
+                                    </tr> -->
+                                    <tr>
+                                        <td dir="ltr" style="padding: 20px 70px 20px 20px; font-family: arial, sans-serif; font-size: 10px; line-height: 1.3; color: #ffffff;" class="sm-px">
+                                            <p style="margin: 0;">Text 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0 20px 30px">
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                <tr>
+                                                    <td style="background: #ffffff;">
+                                                        <a href="#" style="background: #ffffff; border: 1px solid #ffffff; font-family: arial, sans-serif; font-size: 10px; line-height: 1; font-weight: bold; color: #000000; text-align: center; text-decoration: none; padding: 12px 30px; display: block; white-space: nowrap;">Learn More</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </div>
+                        <!--[if gte mso 9]>
+                        </v:textbox>
+                        </v:rect>
+                        <![endif]-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;" class="sm-px">
+                        <span>&nbsp;</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center" valign="middle" class="hide-on-mobile" style="background-image: url('images/camera-back-dsk.png'); background-position: center center; background-size: cover; width:100%; max-width: 640px; height: auto; background-color: #ffffff;">
+                        <!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px; height:57px; background-position: center center !important;">
+                        <v:fill type="tile" src="images/camera-back-dsk.png" color="#ffffff"/>
+                        <v:textbox inset="0,0,0,0">
+                        <![endif]-->
+                        <div>
+                            <!--[if mso]>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                            <td>
+                            <![endif]-->
+                            <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                    <td style="padding: 20px 20px; width: 100%; text-align: center;">
+                                        <img src="images/camera.png" alt="Banner" width="190" height="" style="width:100%; max-width: 190px; height:auto;" class="g-img">
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </div>
+
+                        <div dir="ltr" style="display: table; width: 100%; margin: 0 auto; text-align: center;">
+                            <!--[if mso]>
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="640">
+                            <tr>
+                            <td align="left" valign="middle" width="100">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; width: 100%; max-width: 100px; vertical-align: middle; text-align: center;" class="stack-column-40">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" style="padding: 0 20px 30px; font-family: arial, sans-serif; font-size: 12px; line-height: 1.3; color: #ffffff;">
+                                            <a href="#icon" style="font-family: arial, sans-serif; font-size: 12px; line-height: 1.3; color: #ffffff; text-decoration: none;">
+                                                <img src="images/flowers.png" width="60" height="" alt="Flowers" border="0" style="width:60px; height: auto; font-family: arial, sans-serif; font-size: 15px; line-height:1.3; margin: 0;" class="g-img">
+                                                <p style="margin: 0; ">100,000</p>
+                                                <small>flowers</small>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            <td align="left" valign="middle" width="100">
+                            <![endif]-->
+                             <div style="display:inline-block; margin: 0; width: 100%; max-width: 100px; vertical-align: middle; text-align: center;" class="stack-column-40">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" style="padding: 0 20px 30px; font-family: arial, sans-serif; font-size: 12px; line-height: 1.3; color: #ffffff;">
+                                            <a href="#icon" style="font-family: arial, sans-serif; font-size: 12px; line-height: 1.3; color: #ffffff; text-decoration: none;">
+                                                <img src="images/battery.png" width="60" height="" alt="Battery" border="0" style="width:60px; height: auto; font-family: arial, sans-serif; font-size: 15px; line-height:1.3; margin: 0;" class="g-img">
+                                                <p style="margin: 0; ">4 hours</p>
+                                                <small>battery</small>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            <td align="left" valign="middle" width="100">
+                            <![endif]-->
+                             <div style="display:inline-block; margin: 0; width: 100%; max-width: 100px; vertical-align: middle; text-align: center;" class="stack-column-40">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" style="padding: 0 20px 30px; font-family: arial, sans-serif; font-size: 12px; line-height: 1.3; color: #ffffff;">
+                                            <a href="#icon" style="font-family: arial, sans-serif; font-size: 12px; line-height: 1.3; color: #ffffff; text-decoration: none;">
+                                                <img src="images/shuttle.png" width="60" height="" alt="Auto Shuttle" border="0" style="width:60px; height: auto; font-family: arial, sans-serif; font-size: 15px; line-height:1.3; margin: 0;" class="g-img">
+                                                <p style="margin: 0; ">Auto</p>
+                                                <small>shuttle</small>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            <td align="left" valign="middle" width="100">
+                            <![endif]-->
+                             <div style="display:inline-block; margin: 0; width: 100%; max-width: 100px; vertical-align: middle; text-align: center;" class="stack-column-40">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" style="padding: 0 20px 30px; font-family: arial, sans-serif; font-size: 12px; line-height: 1.3; color: #ffffff;">
+                                            <a href="#icon" style="font-family: arial, sans-serif; font-size: 12px; line-height: 1.3; color: #ffffff; text-decoration: none;">
+                                                <img src="images/brightness.png" width="60" height="" alt="Brightness" border="0" style="width:60px; height: auto; font-family: arial, sans-serif; font-size: 15px; line-height:1.3; margin: 0;" class="g-img">
+                                                <p style="margin: 0; ">15,025</p>
+                                                <small>brightness</small>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </div>
+                        <!--[if gte mso 9]>
+                        </v:textbox>
+                        </v:rect>
+                        <![endif]-->
+                    </td>
+
+                    <td align="center" valign="middle" class="hide-on-dsk show-on-mobile" style="background-image: url('images/camera-back-mob.png'); background-position: center center; background-size: cover; width:100%; max-width: 640px; height: auto; background-color: #ffffff;">
+                        <!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px; height:57px; background-position: center center !important;">
+                        <v:fill type="tile" src="images/camera-back-mob.png" color="#ffffff"/>
+                        <v:textbox inset="0,0,0,0">
+                        <![endif]-->
+                        <div>
+                            <!--[if mso]>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                            <td>
+                            <![endif]-->
+                            <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                    <td style="padding: 0 20px 20px; width: 100%; text-align: center;">
+                                        <img src="images/camera.png" alt="Banner" width="220" height="" style="width:100%; max-width: 220px; height:auto;" class="g-img">
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </div>
+
+                        <div dir="ltr" style="display: table; width: 100%; margin: 0 auto; text-align: center;">
+                            <!--[if mso]>
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="640">
+                            <tr>
+                            <td align="left" valign="middle" width="100">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; width: 100%; max-width: 100px; vertical-align: middle; text-align: center;" class="stack-column-40">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" style="padding: 0 20px 30px; font-family: arial, sans-serif; font-size: 12px; line-height: 1.3; color: #ffffff;">
+                                            <img src="images/flowers.png" width="60" height="" alt="Flowers" border="0" style="width:60px; height: auto; font-family: arial, sans-serif; font-size: 15px; line-height:1.3; margin: 0;" class="g-img">
+                                            <p style="margin: 0; ">100,000</p>
+                                            <small>flowers</small>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            <td align="left" valign="middle" width="100">
+                            <![endif]-->
+                             <div style="display:inline-block; margin: 0; width: 100%; max-width: 100px; vertical-align: middle; text-align: center;" class="stack-column-40">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" style="padding: 0 20px 30px; font-family: arial, sans-serif; font-size: 12px; line-height: 1.3; color: #ffffff;">
+                                            <img src="images/battery.png" width="60" height="" alt="Battery" border="0" style="width:60px; height: auto; font-family: arial, sans-serif; font-size: 15px; line-height:1.3; margin: 0;" class="g-img">
+                                            <p style="margin: 0; ">4 hours</p>
+                                            <small>battery</small>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            <td align="left" valign="middle" width="100">
+                            <![endif]-->
+                             <div style="display:inline-block; margin: 0; width: 100%; max-width: 100px; vertical-align: middle; text-align: center;" class="stack-column-40">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" style="padding: 0 20px 30px; font-family: arial, sans-serif; font-size: 12px; line-height: 1.3; color: #ffffff;">
+                                            <img src="images/shuttle.png" width="60" height="" alt="Auto Shuttle" border="0" style="width:60px; height: auto; font-family: arial, sans-serif; font-size: 15px; line-height:1.3; margin: 0;" class="g-img">
+                                            <p style="margin: 0; ">Auto</p>
+                                            <small>shuttle</small>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            <td align="left" valign="middle" width="100">
+                            <![endif]-->
+                             <div style="display:inline-block; margin: 0; width: 100%; max-width: 100px; vertical-align: middle; text-align: center;" class="stack-column-40">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" style="padding: 0 20px 30px; font-family: arial, sans-serif; font-size: 12px; line-height: 1.3; color: #ffffff;">
+                                            <img src="images/brightness.png" width="60" height="" alt="Brightness" border="0" style="width:60px; height: auto; font-family: arial, sans-serif; font-size: 15px; line-height:1.3; margin: 0;" class="g-img">
+                                            <p style="margin: 0; ">15,025</p>
+                                            <small>brightness</small>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </div>
+                        <!--[if gte mso 9]>
+                        </v:textbox>
+                        </v:rect>
+                        <![endif]-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #000000; padding: 20px 30px; text-align: left;" class="sm-px">
+                        <p style="margin-top: 0; font-size: 12px; line-height: 1.3; color: #ffffff; font-family: arial, sans-serif;">
+                            Camera&emsp;&bull;&emsp;Digital single-lens reflex<br style="display: none;" class="show-on-mobile"><span class="hide-on-mobile">&emsp;&bull;&emsp;</span>LENS&emsp;&bull;&emsp;BAG
+                        </p>
+                        <p style="margin-top: 0; font-size: 12px; line-height: 1.3; color: #ffffff; font-family: arial, sans-serif;">
+                            &copy; Copyright 2003-2021 Company Name to display here. All&nbsp;Rights Reserved.
+                        </p>
+                        <p style="margin-top: 0; font-size: 12px; line-height: 1.3; color: #ffffff; font-family: arial, sans-serif;">
+                            Text for desktop only. You are receiving this email because you participated in a previous offer and opted in for follow-up communication. This is from Company Name to display here, the company's address and the city, in what state is the company, and it's postal code. Some random Desk text.
+                        </p>
+                        <p style="margin-top: 0; font-size: 12px; line-height: 1.3; color: #ffffff; font-family: arial, sans-serif;">
+                            Please add info@comapanyname.com to your address book to ensure our emails reach your inbox.
+                        </p>
+                        <p style="margin-bottom: 0; font-size: 12px; line-height: 1.3; color: #ffffff; font-family: arial, sans-serif;">
+                            <a href="#linkToInstagram">
+                                <img src="images/inLogo.png" alt="Instagram" border="0" height="30" width="30" style="display: inline-block; font-family: arial, sans-serif; font-size: 15px; line-height: 1; margin: 0;">
+                            </a>&emsp;
+                            <a href="#linkToYoutube">
+                                <img src="images/ytLogo.png" alt="Youtube" border="0" height="30" width="30" style="display: inline-block; font-family: arial, sans-serif; font-size: 15px; line-height: 1; margin: 0;">
+                            </a>&emsp;
+                            <a href="#linkToTwitter">
+                                <img src="images/twLogo.png" alt="Twitter" border="0" height="30" width="30" style="display: inline-block; font-family: arial, sans-serif; font-size: 15px; line-height: 1; margin: 0;">
+                            </a>&thinsp;
+                            <a href="#linkToFacebook">
+                                <img src="images/fbLogo.png" alt="Facebook" border="0" height="30" width="30" style="display: inline-block; font-family: arial, sans-serif; font-size: 15px; line-height: 1; margin: 0;">
+                            </a>
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #789db4; padding: 20px 30px;" class="sm-px">
+                        <div dir="ltr" style="display: table; width: 100%; margin: 0 auto; text-align: left; font-size: 0;">
+                            <!--[if mso]>
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="640">
+                            <tr>
+                            <td align="left" valign="middle" width="400">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; width:100%; max-width:400px; vertical-align: middle;" class="stack-column">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="padding: 0 0 20px; font-family: arial, sans-serif; font-size: 12px; line-height: 1.3; color: #ffffff; text-align: center;">
+                                            <a href="#Logo">
+                                                <img src="images/logo.png" alt="Logo" border="0" height="30" width="30" style="display: inline-block; font-family: arial, sans-serif; font-size: 15px; line-height: 1; margin: 0; float: left;">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            <td align="left" valign="middle" width="180">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; width:100%; max-width:180px; vertical-align: middle;" class="stack-column">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="padding: 0 0 20px; font-family: arial, sans-serif; font-size: 12px; line-height: 1.3; color: #ffffff; text-align: left;">
+                                            <a href="#link">
+                                                <img src="images/fLogo1.png" alt="fLogo1" border="0" height="30" width="30" style="display: inline-block; font-family: arial, sans-serif; font-size: 15px; line-height: 1; margin: 0;">
+                                            </a>&emsp;
+                                            <a href="#link">
+                                                <img src="images/fLogo2.png" alt="fLogo2" border="0" height="30" width="30" style="display: inline-block; font-family: arial, sans-serif; font-size: 15px; line-height: 1; margin: 0;">
+                                            </a>&emsp;
+                                            <a href="#link">
+                                                <img src="images/fLogo3.png" alt="fLogo3" border="0" height="30" width="30" style="display: inline-block; font-family: arial, sans-serif; font-size: 15px; line-height: 1; margin: 0;">
+                                            </a>&emsp;
+                                            <a href="#link">
+                                                <img src="images/fLogo4.png" alt="fLogo4" border="0" height="30" width="30" style="display: inline-block; font-family: arial, sans-serif; font-size: 15px; line-height: 1; margin: 0;">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </div>
+
+                        <p style="margin-top: 0; font-size: 12px; line-height: 1.3; color: #ffffff; font-family: arial, sans-serif;">
+                            <a href="#" style="color: #ffffff; text-decoration: none;">Unsubscribe</a>&emsp;&bull;&emsp;<a href="#" style="color: #ffffff; text-decoration: none;">Privacy policy</a><br style="display: none;" class="show-on-mobile"><span class="hide-on-mobile">&emsp;&bull;&emsp;</span><a href="#" style="color: #ffffff; text-decoration: none;">Terms & conditions</a>&emsp;&bull;&emsp;<a href="#" style="color: #ffffff; text-decoration: none;">Contact</a>
+                        </p>
+                        <p style="margin-top: 0; font-size: 12px; line-height: 1.3; color: #ffffff; font-family: arial, sans-serif;">
+                            &copy; Copyright 2003-2021 Company Name to display here. All Rights Reserved.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    </center>
+</body>
+</html>
